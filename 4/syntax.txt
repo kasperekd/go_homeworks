@@ -1,0 +1,277 @@
+
+before walk findKthLargest
+.   IF tc(1) # main.go:8:2
+.   IF-Cond
+.   .   LT-init
+.   .   .   AS tc(1) # main.go:8:8
+.   .   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   .   LEN int tc(1) # main.go:8:8
+.   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   LT bool tc(1) # main.go:8:15
+.   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   NAME-main.k esc(no) Class:PPARAM Offset:0 OnStack Used int tc(1) # main.go:7:33
+.   IF-Body
+.   .   RETURN tc(1) # main.go:9:3
+.   .   RETURN-Results
+.   .   .   LITERAL--1 int tc(1) # main.go:9:10
+.   DCL # main.go:12:6
+.   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+.   AS tc(1) # main.go:12:6
+.   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+.   DCL # main.go:13:6
+.   .   NAME-main.i esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:13:6
+.   AS Def tc(1) # main.go:13:8
+.   .   NAME-main.i esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:13:6
+.   .   LITERAL-0 int tc(1) # main.go:13:11
+.   FOR tc(1) # main.go:13:2
+.   FOR-Cond
+.   .   LT bool tc(1) # main.go:13:16
+.   .   .   NAME-main.i esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:13:6
+.   .   .   NAME-main.k esc(no) Class:PPARAM Offset:0 OnStack Used int tc(1) # main.go:7:33
+.   FOR-Post
+.   .   BLOCK # main.go:13:22
+.   .   BLOCK-List
+.   .   .   ASOP-ADD AsOp:ADD IncDec tc(1) # main.go:13:22
+.   .   .   .   NAME-main.i esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:13:6
+.   .   .   .   LITERAL-1 int tc(1) # main.go:13:22
+.   FOR-Body
+.   .   AS tc(1) # main.go:14:10
+.   .   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+.   .   .   INDEX int tc(1) # main.go:14:16
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   LITERAL-0 int tc(1) # main.go:14:17
+.   .   DCL # main.go:15:3
+.   .   .   NAME-main.maxIndex esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:15:3
+.   .   AS Def tc(1) # main.go:15:12
+.   .   .   NAME-main.maxIndex esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:15:3
+.   .   .   LITERAL-0 int tc(1) # main.go:15:15
+.   .   DCL # main.go:16:7
+.   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   AS Def tc(1) # main.go:16:9
+.   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   LITERAL-1 int tc(1) # main.go:16:12
+.   .   FOR tc(1) # main.go:16:3
+.   .   FOR-Cond
+.   .   .   LT-init
+.   .   .   .   AS tc(1) # main.go:16:22
+.   .   .   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   .   .   LEN int tc(1) # main.go:16:22
+.   .   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   LT bool tc(1) # main.go:16:17
+.   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   FOR-Post
+.   .   .   BLOCK # main.go:16:31
+.   .   .   BLOCK-List
+.   .   .   .   ASOP-ADD AsOp:ADD IncDec tc(1) # main.go:16:31
+.   .   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   .   .   LITERAL-1 int tc(1) # main.go:16:31
+.   .   FOR-Body
+.   .   .   IF tc(1) # main.go:17:4
+.   .   .   IF-Cond
+.   .   .   .   GT bool tc(1) # main.go:17:15
+.   .   .   .   .   INDEX int tc(1) # main.go:17:11
+.   .   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   .   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+.   .   .   IF-Body
+.   .   .   .   AS tc(1) # main.go:18:12
+.   .   .   .   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+.   .   .   .   .   INDEX int tc(1) # main.go:18:18
+.   .   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   .   AS tc(1) # main.go:19:14
+.   .   .   .   .   NAME-main.maxIndex esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:15:3
+.   .   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   AS tc(1) # main.go:22:27
+.   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   LEN int tc(1) # main.go:22:27
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   AS tc(1) # main.go:22:47
+.   .   .   NAME-main..autotmp_8 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:47
+.   .   .   LEN int tc(1) # main.go:22:47
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   AS2 tc(1) # main.go:22:37
+.   .   AS2-Lhs
+.   .   .   INDEX int tc(1) # main.go:22:7
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   NAME-main.maxIndex esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:15:3
+.   .   .   INDEX int tc(1) # main.go:22:23
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   SUB int tc(1) # main.go:22:33
+.   .   .   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   .   .   LITERAL-1 int tc(1) # main.go:22:34
+.   .   AS2-Rhs
+.   .   .   INDEX int tc(1) # main.go:22:43
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   SUB int tc(1) # main.go:22:53
+.   .   .   .   .   NAME-main..autotmp_8 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:47
+.   .   .   .   .   LITERAL-1 int tc(1) # main.go:22:54
+.   .   .   INDEX int tc(1) # main.go:22:62
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   NAME-main.maxIndex esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:15:3
+.   .   AS tc(1) # main.go:23:19
+.   .   .   NAME-main..autotmp_8 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:47
+.   .   .   LEN int tc(1) # main.go:23:19
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   AS tc(1) # main.go:23:14
+.   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   SUB int tc(1) # main.go:23:25
+.   .   .   .   NAME-main..autotmp_8 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:47
+.   .   .   .   LITERAL-1 int tc(1) # main.go:23:26
+.   .   AS tc(1) # main.go:23:8
+.   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   SLICE SLICE-[]int tc(1) # main.go:23:14
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   SLICE-High
+.   .   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   RETURN tc(1) # main.go:26:2
+.   RETURN-Results
+.   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+after walk findKthLargest
+.   IF-init
+.   .   AS tc(1) # main.go:8:8
+.   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   LEN int tc(1) # main.go:8:8
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   IF tc(1) # main.go:8:2
+.   IF-Cond
+.   .   LT bool tc(1) # main.go:8:15
+.   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   NAME-main.k esc(no) Class:PPARAM Offset:0 OnStack Used int tc(1) # main.go:7:33
+.   IF-Body
+.   .   RETURN tc(1) # main.go:9:3
+.   .   RETURN-Results
+.   .   .   AS tc(1) # main.go:9:3
+.   .   .   .   NAME-main.~r0 esc(no) Class:PPARAMOUT Offset:0 OnStack int tc(1) # main.go:7:40
+.   .   .   .   LITERAL--1 int tc(1) # main.go:9:10
+.   DCL # main.go:12:6
+.   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+.   AS tc(1) # main.go:12:6
+.   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+.   DCL # main.go:13:6
+.   .   NAME-main.i esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:13:6
+.   AS Def tc(1) # main.go:13:8
+.   .   NAME-main.i esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:13:6
+.   .   LITERAL-0 int tc(1) # main.go:13:11
+.   FOR tc(1) # main.go:13:2
+.   FOR-Cond
+.   .   LT bool tc(1) # main.go:13:16
+.   .   .   NAME-main.i esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:13:6
+.   .   .   NAME-main.k esc(no) Class:PPARAM Offset:0 OnStack Used int tc(1) # main.go:7:33
+.   FOR-Post
+.   .   BLOCK # main.go:13:22
+.   .   BLOCK-List
+.   .   .   AS tc(1) # main.go:13:22
+.   .   .   .   NAME-main.i esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:13:6
+.   .   .   .   ADD int tc(1) # main.go:13:22
+.   .   .   .   .   NAME-main.i esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:13:6
+.   .   .   .   .   LITERAL-1 int tc(1) # main.go:13:22
+.   FOR-Body
+.   .   AS tc(1) # main.go:14:10
+.   .   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+.   .   .   INDEX int tc(1) # main.go:14:16
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   LITERAL-0 int tc(1) # main.go:14:17
+.   .   DCL # main.go:15:3
+.   .   .   NAME-main.maxIndex esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:15:3
+.   .   AS Def tc(1) # main.go:15:12
+.   .   .   NAME-main.maxIndex esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:15:3
+.   .   .   LITERAL-0 int tc(1) # main.go:15:15
+.   .   DCL # main.go:16:7
+.   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   AS Def tc(1) # main.go:16:9
+.   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   LITERAL-1 int tc(1) # main.go:16:12
+.   .   FOR tc(1) # main.go:16:3
+.   .   FOR-Cond
+.   .   .   LT-init
+.   .   .   .   AS tc(1) # main.go:16:22
+.   .   .   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   .   .   LEN int tc(1) # main.go:16:22
+.   .   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   LT bool tc(1) # main.go:16:17
+.   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   FOR-Post
+.   .   .   BLOCK # main.go:16:31
+.   .   .   BLOCK-List
+.   .   .   .   AS tc(1) # main.go:16:31
+.   .   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   .   .   ADD int tc(1) # main.go:16:31
+.   .   .   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   .   .   .   LITERAL-1 int tc(1) # main.go:16:31
+.   .   FOR-Body
+.   .   .   IF tc(1) # main.go:17:4
+.   .   .   IF-Cond
+.   .   .   .   GT bool tc(1) # main.go:17:15
+.   .   .   .   .   INDEX int tc(1) # main.go:17:11
+.   .   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   .   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+.   .   .   IF-Body
+.   .   .   .   AS tc(1) # main.go:18:12
+.   .   .   .   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+.   .   .   .   .   INDEX int tc(1) # main.go:18:18
+.   .   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   .   .   AS tc(1) # main.go:19:14
+.   .   .   .   .   NAME-main.maxIndex esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:15:3
+.   .   .   .   .   NAME-main.j esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:16:7
+.   .   AS tc(1) # main.go:22:27
+.   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   LEN int tc(1) # main.go:22:27
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   AS tc(1) # main.go:22:47
+.   .   .   NAME-main..autotmp_8 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:47
+.   .   .   LEN int tc(1) # main.go:22:47
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   BLOCK # main.go:22:37
+.   .   BLOCK-List
+.   .   .   AS tc(1) # main.go:22:37
+.   .   .   .   NAME-main..autotmp_9 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:37
+.   .   .   .   INDEX int tc(1) # main.go:22:62
+.   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   .   NAME-main.maxIndex esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:15:3
+.   .   .   AS tc(1) # main.go:22:37
+.   .   .   .   INDEX int tc(1) # main.go:22:7
+.   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   .   NAME-main.maxIndex esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:15:3
+.   .   .   .   INDEX int tc(1) # main.go:22:43
+.   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   .   SUB int tc(1) # main.go:22:53
+.   .   .   .   .   .   NAME-main..autotmp_8 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:47
+.   .   .   .   .   .   LITERAL-1 int tc(1) # main.go:22:54
+.   .   .   AS tc(1) # main.go:22:37
+.   .   .   .   NAME-main..autotmp_10 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:37
+.   .   .   .   SUB int tc(1) # main.go:22:33
+.   .   .   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   .   .   LITERAL-1 int tc(1) # main.go:22:34
+.   .   .   AS tc(1) # main.go:22:37
+.   .   .   .   INDEX int tc(1) # main.go:22:23
+.   .   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   .   .   NAME-main..autotmp_10 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:37
+.   .   .   .   NAME-main..autotmp_9 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:37
+.   .   AS tc(1) # main.go:23:19
+.   .   .   NAME-main..autotmp_8 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:47
+.   .   .   LEN int tc(1) # main.go:23:19
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   AS tc(1) # main.go:23:14
+.   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   .   .   SUB int tc(1) # main.go:23:25
+.   .   .   .   NAME-main..autotmp_8 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:22:47
+.   .   .   .   LITERAL-1 int tc(1) # main.go:23:26
+.   .   AS tc(1) # main.go:23:8
+.   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   SLICE SLICE-[]int tc(1) # main.go:23:14
+.   .   .   .   NAME-main.nums esc(no) Class:PPARAM Offset:0 OnStack Used SLICE-[]int tc(1) # main.go:7:21
+.   .   .   SLICE-High
+.   .   .   .   NAME-main..autotmp_7 esc(N) Class:PAUTO Offset:0 AutoTemp OnStack Used int tc(1) # main.go:8:8
+.   RETURN tc(1) # main.go:26:2
+.   RETURN-Results
+.   .   AS tc(1) # main.go:26:2
+.   .   .   NAME-main.~r0 esc(no) Class:PPARAMOUT Offset:0 OnStack int tc(1) # main.go:7:40
+.   .   .   NAME-main.maxNum esc(no) Class:PAUTO Offset:0 OnStack Used int tc(1) # main.go:12:6
+
+before walk main <nil>
+after walk main <nil>
