@@ -5,6 +5,8 @@ import (
 	dbPack "example_mock/internal/db"
 	"fmt"
 	"log"
+
+	_ "github.com/lib/pq"
 )
 
 func main() {
