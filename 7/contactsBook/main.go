@@ -4,9 +4,10 @@ import (
 	app "contactsBook/authentication"
 	"contactsBook/controllers"
 	"fmt"
-	"github.com/gorilla/mux"
 	"net/http"
 	"os"
+
+	"github.com/gorilla/mux"
 )
 
 func main() {
@@ -17,6 +18,8 @@ func main() {
 	router.HandleFunc("/user/login", controllers.LoginAccount).Methods("POST")
 	router.HandleFunc("/contacts/new", controllers.CreateContact).Methods("POST")
 	router.HandleFunc("/me/contacts", controllers.GetContacts).Methods("GET")
+	router.HandleFunc("/contacts/{id}", controllers.UpdateContact).Methods("PUT")
+	router.HandleFunc("/contacts/{id}", controllers.DeleteContact).Methods("DELETE")
 
 	router.Use(app.JwtAuthentication)
 
