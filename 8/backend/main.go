@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/api", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello Docker!")
+		fmt.Fprintf(w, "Hello Docker !")
 	})
 
 	fmt.Println("Starting server at port 3001")
